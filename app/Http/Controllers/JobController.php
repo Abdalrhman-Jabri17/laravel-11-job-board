@@ -20,7 +20,7 @@ class JobController extends Controller
 
         return view('job.index', [
             'jobs' => Job::with('employer')->latest()
-                ->filters($filters)->get()
+                ->filters($filters)->simplePaginate()
         ]);
     }
     public function show(Job $job)

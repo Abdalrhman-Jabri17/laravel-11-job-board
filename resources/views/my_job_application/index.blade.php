@@ -1,5 +1,5 @@
 <x-layout>
-    <x-breadcrumbs class="mb-4" :links="['My Job Applicatoins' => '#']" />
+    <x-breadcrumbs class="mb-4" :links="['My Job Applications' => '#']" />
     @forelse ($applications as $application)
         <x-job-card :job="$application->job">
             <div class="flex justify-between text-xs items-center text-slate-500">
